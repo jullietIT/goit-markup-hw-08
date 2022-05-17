@@ -117,10 +117,20 @@ img {
 }
 .logo__black {
   color: #212121;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .logo__white {
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 26px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin-top: 32px;
+  }
 }
 
 /* header */
@@ -146,6 +156,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
 }
 .menu__item {
   margin-top: 0;
@@ -205,6 +220,11 @@ img {
   Line-height: 1.1;
   text-decoration: none;
   margin-right: 50px;
+}
+@media (max-width: 1200px) {
+  .contact {
+    display: none;
+  }
 }
 .contact__item {
   margin-top: 0;
@@ -341,7 +361,13 @@ img {
           justify-content: center;
 }
 
-/*Чем мы занимаемся*/
+/*Чем мы занимаемся OK*/
+@media (max-width: 768px) {
+  .container-work {
+    display: none;
+  }
+}
+
 .section-user {
   padding-top: 0px;
 }

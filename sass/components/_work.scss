@@ -55,18 +55,22 @@
     
   }
        
-/*Чем мы занимаемся*/
+/*Чем мы занимаемся OK*/
+.container-work{
+  @media (max-width: 768px)
+  { display: none;}
+ 
+}
+
 .section-user{
-  padding-top: 0px;
+    padding-top: 0px;
 }
 
 .work-foto{
-    display:flex;
-    
-    &__item{
+      display:flex;
+      &__item{
       margin-right: 30px;
-     
-      position: relative;
+           position: relative;
     }
   
   }

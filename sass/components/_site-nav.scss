@@ -8,6 +8,9 @@
   
 /* site nav  */
 .menu{
+  @media (max-width: 1200px){
+    display: none;}
+
     display: block;
 
     padding-inline-start: 0px;
@@ -80,6 +83,10 @@
 
 /*контакты*/
 .contact{
+  @media (max-width: 1200px){
+     display: none;}
+
+
   display: flex;
   margin-left: auto;
   padding-left: 0;

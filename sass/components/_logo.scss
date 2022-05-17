@@ -11,14 +11,19 @@
 
          &__black{
             color: $primary-text-color;
-            margin-top: 32px;
+            margin-top: 16px;
          }
          
          &__white {
             color: #ffffff;
          }
    
-     
+     @media screen and (max-width: 768px){
+     margin-top: 26px;        
+     }
+     @media screen and (max-width: 1200px){
+      margin-top: 32px;        
+      }
   }
      
  
