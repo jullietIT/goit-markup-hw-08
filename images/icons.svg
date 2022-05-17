@@ -116,10 +116,16 @@
 <symbol id="check"  viewBox="0 0 13 10">
 <path d="m2 4.8-.1-.1-1 .9v.1l3.5 3.4h.1l7.6-7.2v-.1l-1-.9-6.6 6.3L2 4.8Z" fill="#fff" stroke="#fff" stroke-width=".2"/></path> 
 
-
-
 </symbol>
 
+
+
+<symbol id="menu" fill="none"  viewBox="0 0 24 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.7V0h24v2.7H0Zm0 6.6h24V6.7H0v2.6ZM0 16h24v-2.7H0V16Z" fill="#000"/></path>
+</symbol>
+
+
+<
 
 </defs>
 </svg>
