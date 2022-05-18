@@ -81,29 +81,6 @@ img {
   margin-bottom: 50px;
 }
 
-.button-modal {
-  color: #ffffff;
-  background-color: #2196f3;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.9;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: transparent;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-modal:hover, .button-modal:focus {
-  background-color: #188CE8;
-}
-
 /*logo*/
 .logo {
   color: #2196f3;
@@ -278,6 +255,29 @@ img {
 
 .contact .contact__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.button-modal {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.9;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: transparent;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-modal:hover, .button-modal:focus {
+  background-color: #188CE8;
 }
 
 /*main-index шапка*/
