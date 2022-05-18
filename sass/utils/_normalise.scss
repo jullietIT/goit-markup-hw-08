@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    color:#e5e5e5;
+    color: $primary-text-color;
     font-family:Roboto,sans-serif;
     font-style: normal;
     line-height: 1.7;
@@ -58,18 +58,21 @@ body{
      overflow: hidden;
    }
    
-   .title{
-     color:  #212121;
-     margin-bottom: 50px;
    
-     font-size: 36px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: 1.16;
-     text-align: center;
-   }
+  
    .section{
       padding-top: 94px;
       padding-bottom: 94px;
     }
+     .section-title{
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 50px;
+  }
+    
+    
     

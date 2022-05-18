@@ -9,22 +9,17 @@
     text-decoration: none;
     margin-right:93px;
 
-         &__black{
-            color: $primary-text-color;
-            margin-top: 16px;
-         }
-         
-         &__white {
-            color: #ffffff;
-         }
-   
-     @media screen and (max-width: 768px){
-     margin-top: 26px;        
-     }
-     @media screen and (max-width: 1200px){
-      margin-top: 32px;        
-      }
+     
   }
+
+   .logo__black{
+      color: $primary-text-color;
+      margin-top: 32px;
+      }
+
+   .logo__white {
+       color: #ffffff;
+      }
      
  
    

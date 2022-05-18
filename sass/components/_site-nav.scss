@@ -1,6 +1,6 @@
 
    /* header */
-   .header {
+   .header__container {
     display: flex;
     align-items: center;
     margin-bottom: -1px;
@@ -8,85 +8,75 @@
   
 /* site nav  */
 .menu{
-  @media (max-width: 1200px){
-    display: none;}
+  display: block;
 
-    display: block;
+  padding-inline-start: 0px;
+  font-size:14px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-decoration:none;
+  display: flex;
+    }
 
-    padding-inline-start: 0px;
-    font-size:14px;
-    font-weight: 500;
-    line-height: 1.1;
-    text-decoration:none;
-    display: flex;
-    
-    &__item{ 
-      margin-top:0 ;
-      margin-bottom: 0;
-      padding-left: 0;
-      margin-right:50px;
+  .menu__item{ 
+     margin-top:0 ;
+     margin-bottom: 0;
+     padding-left: 0;
+     margin-right:50px;
      }
 
-    &__link,
-    &__link--active {
-      display: block;
-      font-style: Medium;
-      line-height:1.1;
-      color:     $primary-text-color;
-      padding:32px 0;
+  .menu__link,
+  .menu__link--active {
+     display: block;
+     font-style: Medium;
+     line-height:1.1;
+     color: $logo-color;
+     padding:32px 0;
+     }
+
+  .menu__link{
+     color:$primary-text-color;
+     padding: 32px 0;
+        
+     transition-property: color ;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     }
 
-    &__link{
-      color:     $title-text-color;
-      padding: 32px 0;
-    
-    
-      transition-property: color ;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+  .menu__link:hover,
+  .menu__link:focus{
+     color: $logo-color;
     }
 
-      &__link:hover,
-      &__link:focus{
-    color: $logo-color;
-    }
-
-    &__link--active{
-      color:$logo-color;
-      padding: 32px 0;
-      position: relative;
+  .menu__link--active{
+     color:$logo-color;
+     padding: 32px 0;
+     position: relative;
      
     }
 
-    &__link--active::after{
-      content: '';
+  .menu__link--active::after{
+    content: '';
+    
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius:2px;
+    border-color: #2196f3;
+    background-color: $logo-color;
+     
+    position: absolute;
+    left: 0;
+    bottom: 0;
       
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius:2px;
-      border-color: #2196f3;
-      background-color: $logo-color;
-      
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      
-      transition-property: color,250ms,(0.4, 0, 0.2, 1);
+    transition-property: color,250ms,(0.4, 0, 0.2, 1);
       }
       
-      
-}
 
 
 /*контакты*/
 .contact{
-  @media screen and (max-width: 1200px){
-     display: none;}
- 
-
   display: flex;
   margin-left: auto;
   padding-left: 0;
@@ -96,75 +86,64 @@
   text-decoration: none;
   margin-right:50px;
 
-      &__item{
-        margin-top:0 ;
-        margin-bottom: 0;
-        padding-left: 0;
+  }
+
+  .contact__item{
+    margin-top:0 ;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .contact__mail{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    padding: 32px 0;
+    margin-right: 10px;
+
+  }
+  .contact__phone{
+  width: 10px;
+  height: 16px;
+  padding: 30px 0;
+  margin-right: 10px;
+  }
+
+
+  .contact__link {
+   display: block;
+   display: flex;
+   align-items: center;
+
+   padding:  32px 0;
+   color:$title-text-color;
+   
+   transition-property: color ;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus{
+        color: $logo-color;
       }
-
-      &__mail{
-        display: inline-block;
-        width: 16px;
-        height: 12px;
-        padding: 32px 0;
-        margin-right: 10px;
-      
-      }
-      &__phone{
-      width: 10px;
-      height: 16px;
-      padding: 30px 0;
-      margin-right: 10px;
-      }
-      
-
-      &__link--mail,
-      &__link--phone {
-        display: block;
-        padding:  32px 0;
-        color:$title-text-color;
-        
-        display: flex;
-        align-items: center;
-
-        transition-property: color ;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-        &__icon--phone,
-        &__icon--mail
-          {
-          margin-right: 10px;}
-
-         &__link:hover,
-         &__link:focus,
-         &__link--mail:hover,
-         &__link--mail:focus,
-         &__link--phone:hover,
-         &__link--phone:focus,
-         &__icon-mail:hover,
-         &__icon-mail:focus,
-         &__icon--phone:hover
-         &__icon--phone:focus{
-         color: $logo-color;
 }
-   }
+
+.contact__icon  {
+    margin-right: 10px;
   
+      &:hover,
+      &:focus{
+      color: $logo-color;
+        }
+  }
+
 .contact .contact__item:not(:last-child) {
   margin-right:50px;
 }
 
-.menu-button{
-display:inline-flex;
-margin:0;
-padding: 0;
-border:none;
-background-color: transparent;
-   &__icon-cross{
-     display: none;
-   }
 
-}
+
+
+
 
  

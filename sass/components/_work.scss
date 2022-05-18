@@ -1,102 +1,95 @@
 /*Особенности*/
-.work{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &__list{
-      width: 270px;
-      margin-right: 30px;
-
-       }
-
-       &__heading{
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-align: left;
-        color:  $primary-text-color;
-         }
-     
-     &__text{
-        color: $title-text-color;
-        font-size: 14px;
-        font-style: normal;
-        text-align: left;
-        }
-         
-      }
-  .work__list:nth-child(4){
-        margin-right: 0px;
-      }
-     
 .features{
     display: flex;
     align-items: center;
     justify-content: center;
-   height:120px;
+     }
+
+   .features__item{
+     width: 270px;
+     margin-right: 30px;
+
+      &:nth-child(4){
+        margin-right: 0px;
+       }
+      }
   
-    background-color: #F5F4FA;
-    border-radius: 4px; ;
-    margin-bottom: 30px;
-    
-    &__item{
-      width: 70px;
-      height:70px;
-      
-    }
-    
-    &__link{
-      display: flex;
-      justify-content: center;
-    }
-    
-  }
+   .features__title{
+     margin-bottom: 10px;
+     font-size: 14px;
+     font-weight: 700;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     text-align: left;
+     color:  $primary-text-color;
+      }
        
-/*Чем мы занимаемся OK*/
-.container-work{
-  @media (max-width: 768px)
-  { display: none;}
- 
-}
-
-.section-user{
-    padding-top: 0px;
-}
-
-.work-foto{
-      display:flex;
-      &__item{
-      margin-right: 30px;
-           position: relative;
-    }
-  
-  }
-
-.work-foto-item:nth-child(3){
-     margin-right: 0;
-   }
-   
-.label-text {
-      position: absolute;
-      bottom: 0;
-      right: 0;
+   .features__text{
+     color: $title-text-color;
+     font-size: 14px;
+     font-style: normal;
+     text-align: left;
+      }
+    .features__box{
       display: flex;
       align-items: center;
       justify-content: center;
-      margin:0;
-      width: 360px;
-      height: 70px;
-      background-color: rgba(47, 48, 58, 0.8);
-                 &__item {
-                  color: $accent-color;
-                 font-weight: 700;
-                 font-size: 14px;
-                 Line-height: 1.2;
-                }
-   }
+      height:120px;
+          
+      background-color: #F5F4FA;
+      border-radius: 4px; ;
+      margin-bottom: 30px;}
+  
+    .features__icon{
+      width: 70px;
+      height:70px;
+      }
+            
+    .features__link{
+       display: flex;
+       justify-content: center;
+         }
+ 
+       
+/*Чем мы занимаемся*/
+.section-user{
+  padding-top: 0px;
+}
+
+.work-foto{
+  display:flex;
+    }
+
+  .work-foto__item{
+    margin-right: 30px;
+    position: relative;
+    color:  $accent-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+
+      &:nth-child(3){
+      margin-right: 0;
+    }
+  }
+
+  
+  .work-foto__box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+               
+ }
+
+
+
 
    
 
