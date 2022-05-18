@@ -1,8 +1,11 @@
 /*Особенности*/
 .features{
+  @media screen  and (min-width:$mobile) {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+   
      }
 
    .features__item{

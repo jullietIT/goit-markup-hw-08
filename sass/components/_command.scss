@@ -3,8 +3,12 @@
     background-color: $color-button;
   }
   .command {
-     
+
+     @media screen  and (min-width:$mobile) {
       display: flex;
+     }
+     
+    
 
     }
   .command__item{
