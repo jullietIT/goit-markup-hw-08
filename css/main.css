@@ -149,6 +149,11 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
 
 .menu__item {
   margin-top: 0;
@@ -215,6 +220,11 @@ img {
   line-height: 1.1;
   text-decoration: none;
   margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    display: none;
+  }
 }
 
 .contact__item {
@@ -367,6 +377,11 @@ img {
 /*Чем мы занимаемся*/
 .section-user {
   padding-top: 0px;
+}
+@media screen and (max-width: 768px) {
+  .section-user {
+    display: none;
+  }
 }
 
 .work-foto {

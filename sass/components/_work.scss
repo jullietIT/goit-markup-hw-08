@@ -53,6 +53,9 @@
        
 /*Чем мы занимаемся*/
 .section-user{
+  @media screen and (max-width: $tablet){
+    display: none;
+  }
   padding-top: 0px;
 }
 

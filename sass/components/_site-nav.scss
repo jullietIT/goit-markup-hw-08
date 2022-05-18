@@ -1,6 +1,7 @@
 
    /* header */
    .header__container {
+
     display: flex;
     align-items: center;
     margin-bottom: -1px;
@@ -8,6 +9,11 @@
   
 /* site nav  */
 .menu{
+  
+  @media screen and (max-width: $tablet){
+    display: none;
+  }
+
   display: block;
 
   padding-inline-start: 0px;
@@ -77,6 +83,9 @@
 
 /*контакты*/
 .contact{
+  @media screen and (max-width: $tablet){
+    display: none;
+  }
   display: flex;
   margin-left: auto;
   padding-left: 0;
