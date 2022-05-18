@@ -375,13 +375,14 @@ img {
 }
 
 /*Чем мы занимаемся*/
-.section-user {
-  padding-top: 0px;
-}
 @media screen and (max-width: 768px) {
-  .section-user {
+  .work-container {
     display: none;
   }
+}
+
+.section-user {
+  padding-top: 0px;
 }
 
 .work-foto {
