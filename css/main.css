@@ -349,21 +349,17 @@ img {
 
 /*Особенности*/
 .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media (min-width: 768px) {
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .features__item {
@@ -373,11 +369,15 @@ img {
 }
 @media (min-width: 768px) {
   .features__item {
-    width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
-.features__item .features__item :nth-child(2) {
-  margin-right: 0px;
+@media (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
 }
 
 .features__title {
@@ -416,6 +416,15 @@ img {
 .features__icon {
   width: 70px;
   height: 70px;
+}
+
+.features__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Чем мы занимаемся*/
