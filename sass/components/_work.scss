@@ -12,13 +12,13 @@ position: relative;
 flex-basis: 100%;
 margin-right: 30px;
 
-    @media  (max-width:$tablet){
-      flex-basis: calc((100% - 30px) / 2);
+    @media  (max-width:$desktop){
+      flex-basis: 50%;
 
     }
 
-    @media  (max-width:$desktop){
-      flex-basis: calc((100% - 30px) / 4);
+    @media  (min-width:$desktop){
+      flex-basis: 25%;
 
     }
   // .features__item :nth-child(2){
