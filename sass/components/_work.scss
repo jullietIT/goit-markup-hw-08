@@ -1,33 +1,37 @@
 /*Особенности*/
 .features{
-  display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
 
+  @media  (min-width:$tablet){
+    display: flex;
+    flex-wrap: nowrap;
   }
 
-   .features__item  {
+  }
+  
+
+.features__item  {
 position: relative;
-flex-basis: 100%;
+width: 100%;
 margin-right: 30px;
 
-    @media  (max-width:$desktop){
-      flex-basis: 50%;
-
+    @media  (min-width:$tablet){
+     width: 50%;
     }
 
-    @media  (min-width:$desktop){
-      flex-basis: 25%;
+    // @media  (min-width:$desktop){
+    //   flex-basis: 25%;
+    // }
 
-    }
-  // .features__item :nth-child(2){
-  //       margin-right: 0px;
-  //       }
+.features__item :nth-child(2){
+        margin-right: 0px;
+        }
    
    } 
      
-   .features__title{
+.features__title{
      margin-bottom: 10px;
      font-size: 14px;
      font-weight: 700;
@@ -37,13 +41,13 @@ margin-right: 30px;
      color:  $primary-text-color;
       }
        
-   .features__text{
+.features__text{
      color: $title-text-color;
      font-size: 14px;
      font-style: normal;
      text-align: left;
       }
-    .features__box{
+.features__box{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -53,12 +57,12 @@ margin-right: 30px;
       border-radius: 4px; ;
       margin-bottom: 30px;}
   
-    .features__icon{
+.features__icon{
       width: 70px;
       height:70px;
       }
             
-    .features__link{
+.features__link{
        display: flex;
        justify-content: center;
          }

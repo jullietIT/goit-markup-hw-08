@@ -47,7 +47,6 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -350,11 +349,6 @@ img {
 
 /*Особенности*/
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -362,24 +356,28 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .features__item {
   position: relative;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
   margin-right: 30px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
   .features__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    width: 50%;
   }
 }
-@media (min-width: 1200px) {
-  .features__item {
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-  }
+.features__item .features__item :nth-child(2) {
+  margin-right: 0px;
 }
 
 .features__title {
