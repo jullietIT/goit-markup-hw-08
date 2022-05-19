@@ -24,7 +24,8 @@
 
     @media (min-width:$desktop){
       width: 270px; 
-        &:nth-child(2n){
+      // margin-right:30px;
+        &:nth-child(2){
           margin-right: 30px;
           }
       }   
@@ -34,16 +35,22 @@
      
 
  .features__title{
-  margin: auto;
 
+  text-align: center;
  
    margin-bottom: 10px;
    font-size: 14px;
    font-weight: 700;
    line-height: 1.14;
    letter-spacing: 0.03em;
-   text-align: left;
+  
    color:  $primary-text-color;
+
+   @media (min-width:$tablet) {
+    text-align: left;
+     
+   }
+
     }
      
  .features__text{
