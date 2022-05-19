@@ -83,18 +83,24 @@
 
 /*контакты*/
 .contact{
-  @media screen and (max-width: $tablet){
-    display: none;
-  }
+
   display: flex;
-  margin-left: auto;
-  padding-left: 0;
   font-size:14px;
   font-weight: 500;
   line-height:1.1;
+
   text-decoration: none;
+  margin-left: auto;
+  padding-left: 0;
   margin-right:50px;
 
+  @media (max-width: $tablet){
+    display: none;
+  
+  }
+@media (max-width:$desktop) {
+  flex-direction: column;
+}
   }
 
   .contact__item{

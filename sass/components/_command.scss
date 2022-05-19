@@ -4,13 +4,12 @@
   }
   .command {
 
-   @media screen  and (min-width:$tablet){
-      display: flex;
-     }
-     
-    
-
-    }
+@media  (min-width: $tablet){
+   display: flex;
+}
+   
+}
+      
   .command__item{
 
    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
