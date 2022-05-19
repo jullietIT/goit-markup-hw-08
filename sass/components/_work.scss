@@ -6,7 +6,7 @@
 
   @media  (min-width:$tablet){
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   }
@@ -21,10 +21,7 @@ margin-right: 30px;
      width: 50%;
     }
 
-    // @media  (min-width:$desktop){
-    //   flex-basis: 25%;
-    // }
-
+  
 .features__item :nth-child(2){
         margin-right: 0px;
         }
@@ -62,10 +59,6 @@ margin-right: 30px;
       height:70px;
       }
             
-.features__link{
-       display: flex;
-       justify-content: center;
-         }
  
        
 /*Чем мы занимаемся*/
