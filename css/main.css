@@ -444,6 +444,11 @@ img {
 .section-user {
   padding-top: 0px;
 }
+@media (max-width: 1200px) {
+  .section-user {
+    display: none;
+  }
+}
 
 .work-foto {
   display: -webkit-box;

@@ -82,6 +82,10 @@
      
 /*Чем мы занимаемся*/
 .section-user{
+  @media (max-width:$desktop) {
+    display: none;
+    
+  }
 padding-top: 0px;
 }
 
