@@ -360,22 +360,36 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 .features__item {
-  width: 270px;
-  margin-right: 30px;
+  position: relative;
+  width: 450px;
 }
-@media (min-width: 1200px) {
-  .features__item:nth-child(4) {
+@media (min-width: 768px) {
+  .features__item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .features__item:not :last-child(-n+2) {
+    margin-right: 0px;
+  }
+  .features__item:nth-child(2n) {
     margin-right: 0px;
   }
 }
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
+  .features__item:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .features__title {
+  margin: auto;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
