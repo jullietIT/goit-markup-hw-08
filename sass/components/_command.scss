@@ -3,11 +3,9 @@
     background-color: $color-button;
   }
   .command {
-
-@media  (min-width: $tablet){
-   display: flex;
-}
-   
+      @media  (min-width: $tablet){
+         display: flex;
+      }
 }
       
   .command__item{
