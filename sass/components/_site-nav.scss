@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     margin-bottom: -1px;
+    position: relative;
   }
   
 /* site nav  */
@@ -81,23 +82,44 @@
      
       // меню навигации 
 .menu-button{
-  display: inline-flex;
+   display: inline-flex;
 
-  margin-left: auto;
-  padding: 0;
- border: none;
- background-color: transparent;
+   margin-left: auto;
+   padding: 0;
+   border: none;
+   background-color: transparent;
 }
 
 .menu-button.icon-cross{
   display: none;
 }
-.menu-button .is-open.icon-cross{
+.menu-button.is-open.icon-cross{
 display: block;
 }
-.menu-button .is-open.icon-menu{
+.menu-button.is-open.icon-menu{
   display:none;
   }
+// окно навигации
+.menu-container{
+  display: none;
+
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+
+  background-color: aqua;
+
+  padding:40px;
+  text-align: center;
+
+       &.is-open{
+          display: block;
+          }
+  }
+
+
+
 
 /*контакты*/
 .contact{

@@ -125,6 +125,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: -1px;
+  position: relative;
 }
 
 /* site nav  */
@@ -213,12 +214,26 @@ img {
   display: none;
 }
 
-.menu-button .is-open.icon-cross {
+.menu-button.is-open.icon-cross {
   display: block;
 }
 
-.menu-button .is-open.icon-menu {
+.menu-button.is-open.icon-menu {
   display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  padding: 40px;
+  text-align: center;
+}
+.menu-container.is-open {
+  display: block;
 }
 
 /*контакты*/
