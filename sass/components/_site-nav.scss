@@ -1,19 +1,24 @@
 
    /* header */
    .header__container {
-
-    display: flex;
+@media(min-width:$tablet) {
+   display: flex;
     align-items: center;
     margin-bottom: -1px;
     position: relative;
+}
+   
   }
-  
+  .menu-container{
+    display: flex;
+  }
+
 /* site nav  */
 .menu{
   
-  @media screen and (max-width: $tablet){
-    display: none;
-  }
+  // @media screen and (max-width: $tablet){
+  //   display: none;
+  // }
 
   display: block;
 
@@ -43,18 +48,17 @@
 
 .menu__link{
      color:$primary-text-color;
-     padding: 32px 0;
-        
+      
      transition-property: color ;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+     &:hover,
+     &:focus{
+          color: $logo-color;
+         }
     }
 
-.menu__link:hover,
-.menu__link:focus{
-     color: $logo-color;
-    }
+
 
 .menu__link--active{
      color:$logo-color;
@@ -80,46 +84,7 @@
     transition-property: color,250ms,(0.4, 0, 0.2, 1);
       }
      
-      // меню навигации 
-.menu-button{
-   display: inline-flex;
-
-   margin-left: auto;
-   padding: 0;
-   border: none;
-   background-color: transparent;
-}
-
-.menu-button.icon-cross{
-  display: none;
-}
-.menu-button.is-open.icon-cross{
-display: block;
-}
-.menu-button.is-open.icon-menu{
-  display:none;
-  }
-// окно навигации
-.menu-container{
-  display: none;
-
-  position:absolute;
-  top:100%;
-  left:0;
-  width:100%;
-
-  background-color: aqua;
-
-  padding:40px;
-  text-align: center;
-
-       &.is-open{
-          display: block;
-          }
-  }
-
-
-
+   
 
 /*контакты*/
 .contact{
@@ -169,7 +134,7 @@ display: block;
    align-items: center;
 
    padding-bottom:  10px;
-  //  padding-top:  21px;
+   
    color:$title-text-color;
    
    transition-property: color ;
@@ -184,6 +149,13 @@ display: block;
         padding:  32px 0;
       }
     }
+
+.contact__link-tablet{
+  @media (max-width:$desktop){
+    padding-top:  21px;
+  }
+  
+}
 
 .contact__icon  {
     margin-right: 10px;
@@ -200,7 +172,53 @@ display: block;
 
 
 
+   // меню навигации 
+.menu-button{
+  display: inline-flex;
+ 
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+    @media (min-width:$tablet) {
+        display: none;
+       }
+ }
+ .icon-cross{
+width: 18px;
+height: 18px;
+ }
+ .menu-button.icon-cross{
+   display: none;
+ }
+ .menu-button.is-open.icon-cross{
+ display: block;
+ }
+ .menu-button.is-open .icon-menu{
+   display:none;
+   }
 
 
+ // окно навигации
+ .menu-container{
+    
+   background-color:$accent-color;
+
+   text-align: center;
+ 
+        &.is-open{
+           display: block;
+           }
+           @media (max-width: 767px) {
+            display: none;
+            position:absolute;
+            top:100%;
+            left:0;
+            width:100%;
+           }
+   }
+ 
+ 
 
  
