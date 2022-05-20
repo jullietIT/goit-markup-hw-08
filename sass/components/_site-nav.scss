@@ -82,15 +82,13 @@
       // меню навигации 
 .menu-button{
   display: inline-flex;
-  margin: 0;
+
+  margin-left: auto;
   padding: 0;
  border: none;
  background-color: transparent;
 }
-.menu-button__icon{
- fill: black;
-  background-color: aqua;
-}
+
 .menu-button.icon-cross{
   display: none;
 }
