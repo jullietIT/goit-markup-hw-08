@@ -19,20 +19,13 @@
 </head>
 <body>
   
-    <!--Верхняя линия-->
+ <!--Верхняя линия-->
     <header class="header">
       <div class="container header__container">
 
            <a href="" class="logo">Web<span class="logo__black">Studio</span>  </a>
-           
-           <!-- <button type="button" class="menu-button"> 
-            <svg width="40"  height="40">
-              <use href="./images/icons.svg#cross"></use>
-              <use href="./images/icons.svg#menu"></use>
-            </svg>
-          </buton> -->
-            
-              <nav >
+<!-- Навигация      -->
+           <nav >
                    <ul class="menu">
                       <li class="menu__item">
                         <a href="./index.html" class="menu__link menu__link--active"> Студия </a></li>
@@ -41,8 +34,18 @@
                       <li class="menu__item">
                         <a href="" class="menu__link"> Контакты </a></li>
                    </ul>
-               </nav>
-               
+                 </nav>
+ <!-- меню навигации -->
+    <button type="button" class="menu-button is-open"> 
+            <svg class="menu-button__icon" 
+            width="40" 
+            height="40"
+            aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./images/icons.svg#cross"></use>
+                <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                </svg>
+       </button>
+ <!-- контакты    -->
         <ul class="contact">
                    <li class="contact__item">                 
                       <a href="mailto:info@devstudio.com" class="contact__link"> 

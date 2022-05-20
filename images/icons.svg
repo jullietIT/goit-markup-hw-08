@@ -126,7 +126,10 @@
 <symbol id="menu" viewBox="0 0 40 40"><path d="M8 14.7V12h24v2.7H8Zm0 6.6h24v-2.6H8v2.6ZM8 28h24v-2.7H8V28Z" ></path>
  </symbol>
 
-<symbol id="cross" viewBox="0 0 19 19"><path d="m18.7 1.9-2-1.9-7.4 7.5L2 0 0 1.9l7.5 7.4L0 16.8l1.9 1.9 7.4-7.5 7.5 7.5 1.9-2-7.5-7.4L18.7 2Z" /></path>
+<symbol id="cross" viewBox="0 0 19 19"><path d="m18.7 1.9-2-1.9-7.4 7.5L2 0 0 1.9l7.5 7.4L0 16.8l1.9 1.9 7.4-7.5 7.5 7.5 1.9-2-7.5-7.4L18.7 2Z" fill="#212121"/></path>
  </symbol>
+
+
+
 </defs>
 </svg>
