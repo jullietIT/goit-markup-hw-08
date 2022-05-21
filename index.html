@@ -23,23 +23,25 @@
 <header class="header">
   <div class="container header__container">
         <a href="" class="logo">Web<span class="logo__black">Studio</span>  </a>
+              <div>
+                      <!-- меню button навигации -->
+                      <button 
+                      type="button" 
+                      class="menu-button"
+                      aria-expanded="false"
+                      aria-controls="menu-container"
+                      data-menu-button  > 
+                      <svg 
+                          width="40" 
+                          height="40" 
+                          aria-label="Переключатель мобильного меню" >
+                            <use class="icon-cross" href="./images/icons.svg#cross" data-modale-close></use> 
+                            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                              </svg>
+                      </button>
 
-          <!-- меню button навигации -->
-          <!-- <button 
-              type="button" 
-              class="menu-button"
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button  > 
-              <svg 
-                  width="19" 
-                  height="19" 
-                  aria-label="Переключатель мобильного меню" >
-                     <use class="icon-cross" href="./images/icons.svg#cross"></use> 
-                    <use class="icon-menu" href="./images/icons.svg#menu"></use>
-                      </svg>
-              </button> -->
-
+                  </div>
+         
 
   <div class="menu-container"  id="menu-container" data-menu>
 
@@ -566,6 +568,63 @@
 </div>
 
 <!-- modal mobile-->
+
+
+
+
+
+<div class="mobile is-hidden"  data-modal>
+                              
+  <form class="mobile_form" name="form" action="#" autocomplete="off" novalidate>
+
+   <button data-modal-close class="mobile_form__button" type="button" >  
+     <svg class="mobile-icon-close"  width="18" height="18"> 
+      <use class="icon-cross" href="./images/icons.svg#cross" data-modale-close></use> 
+    </svg>
+ </button>
+ 
+
+ <nav  class="mobile__naviganion">
+  <ul class="mobile__menu">
+    <li class="mobile__item">
+      <a href="./index.html" class="mobile__link  mobile__link--active"> Студия </a></li>
+    <li class="mobile__item">
+      <a href="./portfolio.html" class="mobile__link">Портфолио </a></li>
+    <li class="mobile__item">
+      <a href="" class="mobile__link"> Контакты </a></li>
+</ul>
+</nav>
+
+
+<div>
+  <ul class="mobile-contact">
+     <li class="mobile-contact__item-tel">
+      <a href="tel:+380961111111"  class="mobile-contact__tel">                     
+      +38 096 111 11 11</a>
+    </li>
+    <li class="mobile-contact__item-mail">                 
+      <a href="mailto:info@devstudio.com" class="mobile-contact__mail mobile-contact__link-tablet"> 
+     info@devstudio.com</a>
+     </li>
+          
+    </ul>
+</div>
+  
+<ul class="social-mobile">
+  <li class="social-mobile__list"><a class="social-mobile__link" href="#">Twitter</a></li>
+  <span class="social-mobile__line"></span>
+  <li class="social-mobile__list"><a class="social-mobile__link" href="#">Instagram</a></li>
+  <span class="social-mobile__line"></span>
+  <li class="social-mobile__list"><a class="social-mobile__link" href="#">Facebook</a></li>
+  <span class="social-mobile__line"></span>
+  <li class="social-mobile__list"><a class="social-mobile__link" href="#">LinkedIn</a></li>
+</ul>
+ 
+     
+
+
+</div>
+
 
 
 
