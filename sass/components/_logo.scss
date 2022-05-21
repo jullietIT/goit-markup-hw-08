@@ -8,14 +8,15 @@
     line-height: 1.2;
     text-align: left;
     text-decoration: none;
+    @media (min-width:$desktop){
+      margin-right:93px;
+    }
+    }
 
-  @media (min-width:$desktop){
-    margin-right:93px;
-
-  }
+ 
   
      
-  }
+  
 
    .logo__black{
       color: $primary-text-color;

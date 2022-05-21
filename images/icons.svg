@@ -126,10 +126,10 @@
 <symbol id="menu" viewBox="0 0 40 40"><path d="M8 14.7V12h24v2.7H8Zm0 6.6h24v-2.6H8v2.6ZM8 28h24v-2.7H8V28Z" ></path>
  </symbol>
 
-<symbol id="cross" viewBox="0 0 19 19"><path d="m18.7 1.9-2-1.9-7.4 7.5L2 0 0 1.9l7.5 7.4L0 16.8l1.9 1.9 7.4-7.5 7.5 7.5 1.9-2-7.5-7.4L18.7 2Z" fill="#212121" ></path>
- </symbol>
 
-
+<symbol id="cross"  width="19" height="19" viewBox="0 0 19 19" fill="none" >
+<path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" fill="#212121"></path>
+</symbol>
 
 </defs>
 </svg>

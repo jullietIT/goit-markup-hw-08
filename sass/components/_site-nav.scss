@@ -1,8 +1,9 @@
 
    /* header */
-   .header__container {
+.header__container { 
+  
 @media(min-width:$tablet) {
-   display: flex;
+    display: flex;
     align-items: center;
     margin-bottom: -1px;
     position: relative;
@@ -11,14 +12,21 @@
   }
   .menu-container{
     display: flex;
+   
   }
 
 /* site nav  */
+.naviganion{
+  @media (min-width:$tablet){
+    margin-left:88px;
+
+  }
+}
 .menu{
   
-  // @media screen and (max-width: $tablet){
-  //   display: none;
-  // }
+  @media screen and (max-width: $tablet){
+    display: none;
+  }
 
   display: block;
 
@@ -171,54 +179,3 @@
   } 
 
 
-
-   // меню навигации 
-.menu-button{
-  display: inline-flex;
- 
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-    @media (min-width:$tablet) {
-        display: none;
-       }
- }
- .icon-cross{
-width: 18px;
-height: 18px;
- }
- .menu-button.icon-cross{
-   display: none;
- }
- .menu-button.is-open.icon-cross{
- display: block;
- }
- .menu-button.is-open .icon-menu{
-   display:none;
-   }
-
-
- // окно навигации
- .menu-container{
-    
-   background-color:$accent-color;
-
-   text-align: center;
- 
-        &.is-open{
-           display: block;
-           }
-           @media (max-width: 767px) {
-            display: none;
-            position:absolute;
-            top:100%;
-            left:0;
-            width:100%;
-           }
-   }
- 
- 
-
- 
