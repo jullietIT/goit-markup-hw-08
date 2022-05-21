@@ -5,10 +5,9 @@
     border: none;
     padding: 0;
 
-     background-color: transparent;
+    background-color: transparent;
  
-
-     position: absolute;
+    position: absolute;
     top: 10px;
     right: 15px;
 
@@ -24,85 +23,23 @@
     background-color: var(--white-color);
     cursor: pointer;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (min-width:$tablet) {
+          display: none;
+                }
+    }
 
     
-     
-    .icon-cross{
-          width: 18px;
-          height: 18px;
+ .icon-cross{
+     width: 18px;
+     height: 18px;
           @media (min-width:$tablet) {
             display:none;
         }
            }
 
-
-
-
-
-
-
-
-
-           
-
-//    // меню навигации 
-//    .menu-button{
-//    
   
-//     // margin-left: auto;
-//     
-  
-//       @media (min-width:$tablet) {
-//           display: none;
-//          }
-//    }
-//
-// .menu-button.icon-cross{
-//      display: none;
-//    }
-// .menu-button.is-open.icon-cross{
-//    display: block;
-//    }
-// .menu-button.is-open .icon-menu{
-//      display:none;
-//      }
-    
-
-//   .icon-menu{
-//     @media (min-width:$tablet) {
-//         display: none;
-//   }   
-//    }
-  
-//    // окно навигации
-//    .menu-container{
-      
-//      background-color:$accent-color;
-  
-//      text-align: center;
-   
-     
-//      }
-// .menu-container.is-open{
-//         display: block;
-//         @media (max-width: 767px) {
-//             display: none;
-//             position:absolute;
-//             top:100%;
-//             left:0;
-//             width:100%;
-//            }
-//         }
-        
-   
-   
-  
-   
-  
-
-
-
+ 
 // // modal
 .mobile {
   display: flex;
@@ -190,33 +127,14 @@ margin-top: 306px;
     letter-spacing: 0.02em;
         
     color:  $title-text-color;
-   
-}
+   }
 
-
- .mobile-contact__item-tel {
+   .mobile-contact__item-tel {
     margin-bottom: 32px;
   }
   .mobile-contact__item-mail {
     margin-bottom: 64px;
   }
-
-
- 
-
-// .mobile-button {
-//   background-color: var(--white-color);
-//   cursor: pointer;
-//   border: none;
-
-//   .mobile:hover {
-//     fill: var(--accent-color);
-//   }
-
-//   @media (min-width: 767px) {
-//     display: none;
-//   }
-// }
 
 .social-mobile {
   display: flex;
@@ -245,3 +163,42 @@ margin-top: 306px;
 
 
  
+
+
+         
+
+// &&&&&&&&&&&&&&&&&&&&
+
+.menu-button.icon-cross{
+    display: none;
+  }
+.menu-button.is-open.icon-cross{
+  display: block;
+  }
+.menu-button.is-open .icon-menu{
+    display:none;
+    }
+   
+
+ .icon-menu{
+   @media (min-width:$tablet) {
+       display: none;
+ }   
+  }
+
+
+ 
+  
+.menu-container.is-open{
+       display: block;
+       @media (max-width: 767px) {
+           display: none;
+           position:absolute;
+           top:100%;
+           left:0;
+           width:100%;
+          }
+       }
+       
+//    ?&&&&&&&&&&&&&&&
+  
