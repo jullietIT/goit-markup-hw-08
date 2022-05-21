@@ -3,7 +3,7 @@
 
   
 .hero{
-      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image-mobile.jpg");
+      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("//images/Header/Header480.jpg");
       background-color:$color-block;
       background-repeat: no-repeat; 
       background-size: cover;
@@ -18,13 +18,13 @@
 
           
             @media screen and (min-width:$tablet){
-      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image-tablet.jpg");
+      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("///images/Header/Header768.jpg");
       padding: 200px 0;
       max-width: 768px; 
             } 
 
             @media screen and (min-width:$desktop){
-      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image.jpg");
+      background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("//images/Header/Header.jpg");
 
       max-width: 1600px; 
             } 
