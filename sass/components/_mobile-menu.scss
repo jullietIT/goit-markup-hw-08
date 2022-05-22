@@ -25,6 +25,8 @@
   height: 100%;
   overflow-y:auto;
   overflow-x: hidden;
+  opacity: 0;
+  visibility: hidden;
     }
     .mobile.open{
         opacity: 1;
