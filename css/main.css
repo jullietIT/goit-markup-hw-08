@@ -1336,6 +1336,18 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.mobile_form__button.icon-cross {
+  display: none;
+}
+
+.mobile_form__button.is open.icon-cross {
+  display: block;
+}
+
+.mobile_form__button.is open.icon-menu {
+  display: none;
+}
+
 .menu-button, .menu-button__cross {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
