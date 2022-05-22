@@ -19,6 +19,59 @@
   
      margin-left: auto;
      margin-right: auto;
-  
-      
+        
    }
+   .mobile__link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color:$primary-bg-color;
+   }
+ .mobile-contact__item-tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.33;
+
+    letter-spacing: 0.02em;
+
+    color: $logo-color;
+}
+.mobile-contact__item-mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color:$title-text-color;
+}
+
+
+.social-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+  
+    &__list:not(:last-child),
+    &__line:not(:last-child) {
+      margin-right: 10px;
+    }
+ }
+  
+  .social-mobile__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $logo-color;
+  }
+
+  .social-mobile__line {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background: rgba(33, 33, 33, 0.2);
+    transform: rotate(0deg);
+  }
