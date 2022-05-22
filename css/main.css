@@ -1062,6 +1062,12 @@ img {
   fill: currentColor;
 }
 
+.footer-form-modal {
+  width: 100%;
+  margin-left: 166px;
+  margin-right: 152px;
+}
+
 .form-footer__input {
   width: 480px;
   height: 50px;
