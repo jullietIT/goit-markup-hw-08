@@ -17,7 +17,7 @@
 
     // Навигация  mobile
 
-    .mobile{
+.mobile{
   position:fixed;
   top:0;
   left: 0;
@@ -56,26 +56,38 @@
      margin-right: auto;
         
    }
-   .mobile__link{
+.mobile__link{
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
 
-    color:$primary-bg-color;
-    margin-bottom: 32px;
+    color:  $primary-text-color;
+   
    }
- .mobile-contact__item-tel{
+   .mobile__link--active{
+    color:  $logo-color;
+   }
+   .mobile__item{
+    padding-bottom: 32px;
+    
+   }
+   .mobile-contact__item-tel{ 
+       padding-top: 306px;
+       padding-bottom: 32px;
+      }
+
+ .mobile-contact__tel{
     font-weight: 500;
     font-size: 34px;
     line-height: 1.33;
 
     letter-spacing: 0.02em;
-
+    
     color: $logo-color;
 }
-.mobile-contact__item-mail{
+.mobile-contact__mail{
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;

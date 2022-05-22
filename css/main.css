@@ -1398,11 +1398,23 @@ mobile.open.mobile-content {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
-  color: #e5e5e5;
-  margin-bottom: 32px;
+  color: #212121;
+}
+
+.mobile__link--active {
+  color: #2196f3;
+}
+
+.mobile__item {
+  padding-bottom: 32px;
 }
 
 .mobile-contact__item-tel {
+  padding-top: 306px;
+  padding-bottom: 32px;
+}
+
+.mobile-contact__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.33;
@@ -1410,7 +1422,7 @@ mobile.open.mobile-content {
   color: #2196f3;
 }
 
-.mobile-contact__item-mail {
+.mobile-contact__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
