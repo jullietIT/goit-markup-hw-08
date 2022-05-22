@@ -8,8 +8,11 @@
   flex-wrap: wrap;
   position: relative;
  
-   
-     
+  @media (min-width:$desktop){
+    justify-content: center;
+    display: flex;
+  }
+
   }
   .filters__box{
     display: inline-block;

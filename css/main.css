@@ -734,6 +734,16 @@ img {
       flex-wrap: wrap;
   position: relative;
 }
+@media (min-width: 1200px) {
+  .filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .filters__box {
   display: inline-block;
