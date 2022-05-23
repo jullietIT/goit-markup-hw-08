@@ -8,6 +8,10 @@
  .features__item{
   position: relative;
    width: 450px;
+   &:not(:last-child){
+    margin-bottom: 30px;
+   }
+   
   
     @media(min-width:$tablet) {
         width: 354px;  

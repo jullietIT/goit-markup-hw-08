@@ -13,9 +13,9 @@
 }
       
   .command__item{
-   margin-bottom: 30px;
+  
    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-   // width: 450px;
+   width: 450px;
    margin-right: 30px;
    background-color: $accent-color;
 
@@ -29,6 +29,11 @@
           &:nth-child(2n){
           margin-right: 0px;
          }
+      }
+
+      @media (max-width:$desktop) {
+         margin-bottom: 30px;
+      
       }
 
   @media (min-width:$desktop){

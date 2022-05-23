@@ -20,7 +20,7 @@
     .clients__item{
       position: relative;
         margin-right: 30px;
-        margin-bottom: 30px;
+     
         width: 226px;
         height: 92px;
         
@@ -30,6 +30,11 @@
               &:nth-child(3n){
               margin-right: 0px;
              }
+             @media (max-width:$desktop) {
+              margin-bottom: 30px;
+           
+           }
+
              @media (min-width:$desktop) {
               width:170px;
               &:nth-child(3){

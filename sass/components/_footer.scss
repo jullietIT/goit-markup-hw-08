@@ -21,6 +21,7 @@
 
          @media screen and (min-width:$tablet) and (max-width: 1199px) {
           flex-wrap: wrap;
+          justify-content:space-around
          }
 
            @media (min-width:$desktop) {
@@ -30,16 +31,14 @@
           
   }
   .footer-adress{
-    @media screen and (min-width:$tablet) and (max-width: 1199px) {
-    margin: 0 165px 0 76px;}
-    @media (min-width:$desktop){
+      @media (min-width:$desktop){
       margin-right: 70px;
     }
   }
   .address {
     padding-left: 0;
     margin-top: 20px;
-    margin-bottom: 60px;
+   
            
      }
 
@@ -75,8 +74,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-top: 60px;
+  
   
   }
  
@@ -137,8 +135,8 @@
  .footer-form-modal{
     width: 100%;
     @media (min-width:$tablet) {
-      margin-left: 166px;
-      margin-right: 152px;
+      // margin-left: 166px;
+      // margin-right: 152px;
     }
    
   }

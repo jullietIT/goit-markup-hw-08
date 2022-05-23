@@ -13,20 +13,18 @@
       text-align: center;
       margin: 0 auto;
       padding: 118px 0;
+      max-width: 1600px; 
     
-      max-width: 480px; 
-
-          
             @media screen and (min-width:$tablet){
       background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Header/Header768.jpg");
       padding: 200px 0;
-      max-width: 768px; 
+       
             } 
 
             @media screen and (min-width:$desktop){
       background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Header/Header.jpg");
 
-      max-width: 1600px; 
+     
             } 
  }
  
@@ -37,7 +35,7 @@
       text-align: center;
       margin-bottom: 30px;
 
-     @media screen and (min-width:$tablet) {
+     @media (min-width:$desktop) {
       font-size: 44px;
       font-style: normal;
       line-height: 1.4;
