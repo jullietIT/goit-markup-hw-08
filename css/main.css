@@ -703,6 +703,9 @@ img {
   .clients__item {
     margin-bottom: 30px;
   }
+  .clients__item:nth-child(4), .clients__item:nth-child(5), .clients__item:nth-child(6) {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1200px) {
   .clients__item {

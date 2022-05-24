@@ -32,6 +32,11 @@
              }
              @media (max-width:$desktop) {
               margin-bottom: 30px;
+              &:nth-child(4),
+              &:nth-child(5),
+              &:nth-child(6){
+                margin-bottom: 0px;
+              }
            
            }
 
@@ -40,9 +45,7 @@
               &:nth-child(3){
                 margin-right: 30px;
                 }
-              // .clients__item:not(:last-child){
-              //   margin-right: 30px;
-              // }
+            
     
   }
      
