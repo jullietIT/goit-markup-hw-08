@@ -159,22 +159,24 @@ img {
   }
 }
 
-.menu {
-  display: block;
-  -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.1;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 88px;
-}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: block;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
   }
 }
 

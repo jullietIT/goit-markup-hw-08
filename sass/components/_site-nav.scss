@@ -1,33 +1,28 @@
 
    /* header */
 .header__container { 
-  
-@media(min-width:$tablet) {
-    display: flex;
-    align-items: center;
-    margin-bottom: -1px;
-    position: relative;
-}
-   
+    @media(min-width:$tablet) {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1px;
+        position: relative;
+    }
   }
-  .menu-container{
+.menu-container{
     display: flex;
-   
-  }
+     }
 
 /* site nav  */
 .naviganion{
   @media (min-width:$tablet){
     margin-left:88px;
-
   }
 }
 .menu{
-  
-  @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet){
     display: none;
   }
-
+@media (min-width:$tablet) {
   display: block;
 
   padding-inline-start: 0px;
@@ -37,6 +32,9 @@
   text-decoration:none;
   display: flex;
   margin-left: 88px;
+  
+}
+  
  
     }
 
