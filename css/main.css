@@ -778,14 +778,18 @@ img {
 
 .filters__box {
   display: inline-block;
-  margin-bottom: 15px;
   margin-right: 8px;
 }
 .filters__box:nth-child(5) {
   margin-right: 0px;
 }
-.filters__box:nth-child(7), .filters__box:nth-child(8), .filters__box:nth-child(9) {
-  margin-bottom: 0px;
+@media (max-width: 767) {
+  .filters__box {
+    margin-bottom: 15px;
+  }
+  .filters__box:nth-child(4), .filters__box:nth-child(5) {
+    margin-bottom: 0px;
+  }
 }
 
 .button {
@@ -850,7 +854,7 @@ img {
 .project__card {
   position: relative;
 }
-.project__card:nth-last-child {
+.project__card .project__card:nth-last-child {
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
