@@ -551,6 +551,9 @@ img {
   margin-right: 30px;
   background-color: #ffffff;
 }
+.command__item:nth-child(4) {
+  margin-bottom: 0px;
+}
 @media (min-width: 768px) {
   .command__item {
     width: 354px;
@@ -783,7 +786,7 @@ img {
 .filters__box:nth-child(5) {
   margin-right: 0px;
 }
-@media (max-width: 767) {
+@media (max-width: 767px) {
   .filters__box {
     margin-bottom: 15px;
   }
@@ -852,10 +855,10 @@ img {
 }
 
 .project__card {
-  position: relative;
-}
-.project__card .project__card:nth-last-child {
   margin-bottom: 30px;
+}
+.project__card:nth-child(9n) {
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .project__card {
