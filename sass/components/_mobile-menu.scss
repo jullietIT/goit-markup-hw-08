@@ -1,27 +1,36 @@
+// button
 
-.mobile__form-button.icon-cross{
-  display: none;
-}
-.mobile__form-button.is open.icon-cross{
-  display: block;
-}
-mobile__form-buttonn.is open.icon-menu{
-  display: none;
-}
-
-mobile__form-button.menu-button__cross {
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), color  250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1); ;
-      background-color: transparent;
-      border: none;
-          padding: 0;
-          line-height: 0 }
-          
 .mobile__menu-button{
+position: absolute;
+top: 8px;
+right: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+padding: 0;
+background-color: #FFFFFF;
+
   @media (min-width:$tablet) {
     display: none;
-    
+  
   }
 }
+
+
+
+// .mobile__form-button.icon-cross{
+//   display: none;
+// }
+.mobile__form-button.is open .mobile__icon-cross{
+  display: block;
+ }
+// mobile__form-buttonn.is open.icon-menu{
+//   display: none;
+// }
+          
+
 
  .menu-button__cross.mobile__form-button {
           // position: absolute;
@@ -32,6 +41,23 @@ mobile__form-button.menu-button__cross {
           right: 21px;
           
           }
+ .mobile__form-button{
+            // position: absolute;
+            top: 8px;
+            right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            padding: 11px;
+            background-color: #FFFFFF;
+          
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+          
           
 
     // Навигация  mobile
@@ -42,31 +68,28 @@ mobile__form-button.menu-button__cross {
   left: 0;
   width: 100%;
   height: 100%;
+ background-color: #FFFFFF;
+  // display: none
+}
 
-
-  opacity: 0;
-  visibility:hidden;
-  
-    }
-    .mobile.open{
-        opacity: 1;
-        visibility: visible;
-    }
-    mobile.open.mobile-content{
-        opacity: 1;
-    }
 .mobile-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 40px;  
     background-color:  rgba(255, 255, 255, 1); 
-
         
    }
+   .mobile__item{       
+    &:not(:last-child){
+      margin-bottom:32px;
+   }
+   
+}
 
 .mobile__link{
     font-style: normal;
@@ -74,32 +97,24 @@ mobile__form-button.menu-button__cross {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-
     color:  $primary-text-color;
-   
-   }
-   .mobile__link--active{
+      }
+ .mobile__link--active{
     color:  $logo-color;
    }
-   .mobile__item{
-       
-       &:not(:last-child){
-         margin-bottom:32px;
-      }
-      
-   }
+  
 .mobile-contact__item-tel{ 
       //  padding-top: 306px;
        padding-bottom: 32px;
       }
 
- .mobile-contact__tel{
+ .mobile-contact__link-tel{
     font-weight: 500;
     font-size: 34px;
     line-height: 1.33;  
     color: $logo-color;
 }
-.mobile-contact__mail{
+.mobile-contact__link-mail{
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
@@ -109,6 +124,8 @@ mobile__form-button.menu-button__cross {
 }
 
 
+
+// social mobile
 .social-mobile {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +137,7 @@ mobile__form-button.menu-button__cross {
     }
  }
   
-  .social-mobile__link {
+ .social-mobile__link {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -130,8 +147,17 @@ mobile__form-button.menu-button__cross {
     color: $logo-color;
   }
 
-  .social-mobile__line {
+.social-mobile__line {
     border: 1px solid rgba(33, 33, 33, 0.2);
     background: rgba(33, 33, 33, 0.2);
     transform: rotate(0deg);
   }
+
+  
+.socials__item {
+    padding: 0 10px;
+    color:  rgba(33, 33, 33, 0.2);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+

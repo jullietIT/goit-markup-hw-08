@@ -29,7 +29,13 @@
           &:nth-child(2n){
           margin-right: 0px;
          }
+                
+         &:nth-child(3),
+         &:nth-child(4){
+           margin-bottom: 0px;
+         }
       }
+
 
       @media (max-width:$desktop) {
          margin-bottom: 30px;
