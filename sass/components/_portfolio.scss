@@ -13,9 +13,15 @@
   }
   .filters__box{
     display: inline-block;
+    margin-bottom: 15px;
     margin-right: 8px;
         &:nth-child(5){
           margin-right: 0px;
+        }
+     ,
+        &:nth-child(4),
+        &:nth-child(5){
+          margin-bottom: 0px;
         }
       }
      
