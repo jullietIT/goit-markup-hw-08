@@ -164,6 +164,19 @@ img {
 }
 @media (min-width: 768px) {
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
@@ -234,26 +247,20 @@ img {
 }
 @media (min-width: 768px) {
   .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
     text-decoration: none;
     margin-left: auto;
     padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-left: auto;
   }
 }
 @media (max-width: 1200px) {
@@ -824,7 +831,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -836,7 +842,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
   }
 }
 
@@ -848,7 +853,6 @@ img {
 }
 @media (min-width: 768px) {
   .project__card {
-    width: 354px;
     margin-right: 30px;
     padding: 0;
     margin-bottom: 30px;
@@ -1179,8 +1183,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-height: 581px;
-  min-width: 528px;
+  min-height: 450px;
+  min-width: 609px;
   max-width: 33rem;
   width: 100%;
   cursor: pointer;
@@ -1192,6 +1196,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 1200px) {
+  .modal_form {
+    min-height: 581px;
+    min-width: 528px;
+  }
+}
 
 /* кнопка закрытия */
 .modal-form__title {
@@ -1202,6 +1212,36 @@ img {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1199px) {
+  .modal-form-mobile {
+    display: block;
+  }
+}
+
+.modal_form__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -1375,8 +1415,12 @@ textarea {
   padding: 0;
   margin: 0;
   background-color: transparent;
-  border: none;
+  fill: #212121;
   z-index: 2;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
   .mobile-menu__button {
