@@ -1,6 +1,7 @@
 
    /* header */
 .header__container { 
+
     @media(min-width:$tablet) {
         display: flex;
         align-items: center;
@@ -12,12 +13,12 @@
 
 /* menu  */
 
-.menu-nav{
+// .menu-nav{
   
-  @media (min-width:$tablet){
-    margin-left:88px;
-    display: inline-block;
-  }
+//   @media (min-width:$tablet){
+//     margin-left:88px;
+//     display: inline-block;
+//   }
 }
 .menu{
   display: block;
@@ -29,7 +30,7 @@
     @media (min-width:$tablet) {
     // margin-left: 88px;
 
-    // display: inline-block;
+    display: inline-block;
 
     padding-inline-start: 0px;
     font-size:14px;

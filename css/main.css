@@ -162,6 +162,7 @@ img {
 }
 @media (min-width: 768px) {
   .menu {
+    display: inline-block;
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
     font-size: 14px;
