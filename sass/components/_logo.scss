@@ -8,18 +8,20 @@
     line-height: 1.2;
     text-align: left;
     text-decoration: none;
+
+
     
     }
-
- 
-  
-     
-  
-
-   .logo__black{
+ .logo__black{
       color: $primary-text-color;
       margin-top: 32px;
+      @media (min-width:$tablet) { 
+          margin-right: 88px;
       }
+      @media (min-width:$desktop){
+         margin-right: 93px;
+      }  
+}
 
    .logo__white {
        color: #ffffff;
