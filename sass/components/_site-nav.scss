@@ -12,23 +12,24 @@
 
 /* menu  */
 
-// .naviganion{
+.menu-nav{
   
-//   @media (min-width:$tablet){
-//     margin-left:88px;
-//   }
-// }
+  @media (min-width:$tablet){
+    margin-left:88px;
+    display: inline-block;
+  }
+}
 .menu{
   display: block;
+  font-size:40px;
+  font-weight: 500;
+  line-height: 1.2;
+  
  
     @media (min-width:$tablet) {
-    // padding-inline-start: 0px;
-    // text-decoration:none;
-    // display: flex;
-    // align-items: center;
     // margin-left: 88px;
 
-    display: block;
+    // display: inline-block;
 
     padding-inline-start: 0px;
     font-size:14px;
@@ -40,17 +41,13 @@
 }
 
 .menu__item{ 
-  font-weight: 500;
-  font-size:40px;
-  line-height: 1.2;
+ 
      margin-top:0 ;
      margin-bottom: 0;
      padding-left: 0;
                     
   @media (min-width:$tablet){
-    font-size:14px;
-    font-weight: 500;
-    line-height: 1.1;
+  
     &:not(:last-child){
       margin-right:50px;
      }

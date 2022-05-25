@@ -147,12 +147,21 @@ img {
 }
 
 /* menu  */
+@media (min-width: 768px) {
+  .menu-nav {
+    margin-left: 88px;
+    display: inline-block;
+  }
+}
+
 .menu {
   display: block;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 @media (min-width: 768px) {
   .menu {
-    display: block;
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
     font-size: 14px;
@@ -166,19 +175,11 @@ img {
 }
 
 .menu__item {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 @media (min-width: 768px) {
-  .menu__item {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.1;
-  }
   .menu__item:not(:last-child) {
     margin-right: 50px;
   }
