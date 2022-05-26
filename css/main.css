@@ -1052,11 +1052,21 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 60px;
 }
-@media (max-width: 767px) {
-  .footer-form {
-    margin-top: 60px;
-  }
+
+.footer-label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
 }
 
 .footer__title {
@@ -1139,7 +1149,7 @@ img {
 }
 @media (min-width: 768px) {
   .form-footer__input {
-    width: 100%;
+    width: 450px;
   }
 }
 @media (min-width: 1200px) {
