@@ -1,37 +1,27 @@
  /* Наша команда */
- .section__user-background{
+ .section__command{
     background-color: $color-button;
   }
   .command {
       display: flex;
-         align-items: center;
-         justify-content: center;
-    flex-wrap: wrap;
-
-     
-   
-      @media  (min-width: $tablet){
-         display: flex;
-      }
-}
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
       
   .command__item{
-  
-   &:nth-child(4){
-      margin-bottom: 0px;
-    }
-   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-   // width: 450px;
-   margin-right: 30px;
-   background-color: $accent-color;
+      margin-right: 30px;
+       &:nth-child(4){
+         margin-bottom: 0px;
+        }
+       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+       background-color: $accent-color;
+      // width: 450px;
 
-
-   @media(min-width:$tablet) {
+      @media(min-width:$tablet) {
       // width: 354px;  
       margin-right: 30px;
-          &:not :last-child(-n+2){
-            margin-right: 0px;
-                }
+         
           &:nth-child(2n){
           margin-right: 0px;
          }
@@ -41,10 +31,10 @@
            margin-bottom: 0px;
          }
       }
-
-
       @media (max-width:$desktop) {
          margin-bottom: 30px;
+         // max-width: 270px;
+         //  max-height: 428px;
       
       }
 
@@ -53,17 +43,11 @@
         &:nth-child(2){
         margin-right: 30px;
         }
-    }   
-      
-                   
-   }
+    }  
+}
   .command__foto{
-
- 
-
-             
        @media screen  and (min-width:$desktop){
-        }
+          }
      }
      
   .command__box{

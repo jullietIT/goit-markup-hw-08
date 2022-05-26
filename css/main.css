@@ -416,7 +416,7 @@ img {
 
 .features__item {
   position: relative;
-  width: 450px;
+  width: 100%;
 }
 .features__item:not(:last-child) {
   margin-bottom: 30px;
@@ -542,7 +542,7 @@ img {
 }
 
 /* Наша команда */
-.section__user-background {
+.section__command {
   background-color: #F5F4FA;
 }
 
@@ -559,18 +559,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media (min-width: 768px) {
-  .command {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 
 .command__item {
+  margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  margin-right: 30px;
   background-color: #ffffff;
 }
 .command__item:nth-child(4) {
@@ -579,9 +572,6 @@ img {
 @media (min-width: 768px) {
   .command__item {
     margin-right: 30px;
-  }
-  .command__item:not :last-child(-n+2) {
-    margin-right: 0px;
   }
   .command__item:nth-child(2n) {
     margin-right: 0px;
@@ -684,36 +674,41 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  margin-right: 30px;
+  margin: 15px;
+  width: 210px;
+  height: 92px;
 }
-.clients__item:nth-child(2n) {
-  margin-right: 0px;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .clients__item {
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .clients__item:nth-child(3n) {
-    margin-right: 0px;
+    height: 92px;
+    width: 226px;
+    -ms-flex-preferred-size: 33, 33333%;
+        flex-basis: 33, 33333%;
   }
 }
-.clients__item:nth-child(5), .clients__item:nth-child(6) {
-  margin-bottom: 0px;
+@media (min-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: 12, 5%;
+        flex-basis: 12, 5%;
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__link {
+  height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,8 +720,6 @@ img {
           justify-content: center;
   fill: currentColor;
   color: #AFB1B8;
-  width: 100%;
-  height: 100%;
   border: 1px solid #AFB1B8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
