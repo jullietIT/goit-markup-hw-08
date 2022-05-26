@@ -265,6 +265,7 @@ img {
 }
 @media (max-width: 1200px) {
   .contact {
+    margin-left: 84px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
