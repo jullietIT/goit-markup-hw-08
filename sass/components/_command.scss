@@ -20,6 +20,7 @@
 
       @media(min-width:$tablet) and (max-width:1199px) {
       // width: 354px;  
+      margin-bottom: 30px;
       margin-right: 30px;
          
           &:nth-child(2n){
@@ -31,8 +32,9 @@
            margin-bottom: 0px;
          }
       }
-      @media (max-width:$desktop) {
-         margin-bottom: 30px;
+      @media (min-width:$desktop) {
+       
+         margin-right: 30px;
          // max-width: 270px;
          //  max-height: 428px;
       
