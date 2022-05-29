@@ -882,11 +882,11 @@ img {
 }
 
 /* Overlay */
+/* Overlay */
 .project__overlay {
   position: relative;
   overflow: hidden;
 }
-
 .project__overlay-text {
   display: inline-block;
   font-weight: 400;
@@ -918,45 +918,41 @@ img {
   background-color: #FFFFFF;
 }
 
-.project__box {
-  padding: 20px 24px;
-  border-bottom: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
-}
-.project__box .project__title {
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-}
-.project__box .project__label {
-  font-size: 16px;
-  line-height: 1.9;
-  color: #757575;
-  margin-top: 4px;
-}
-.project__box .project__card:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-.project__box .project__link:hover .project__overlay-text,
-.project__box .project__link:focus .project__overlay-text {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-}
-
-.project__text {
+.project__overlay__text {
   padding: 20px 24px;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
 }
 
-.project__design {
-  Font-size: 16px;
-  Line-height: 1.9;
+.project__title {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.project__label {
+  font-size: 16px;
+  line-height: 1.9;
   color: #757575;
   margin-top: 4px;
+}
+
+.project__card:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
+.project__card:nth-child(3),
+.project__card:nth-child(6),
+.project__card:nth-child(9) {
+  margin-right: 0px;
+}
+
+.project__link:hover .project__overlay-text,
+.project__link:focus .project__overlay-text {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 /* Подвал*/
