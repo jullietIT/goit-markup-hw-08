@@ -569,7 +569,7 @@ img {
 .command__item:nth-child(4) {
   margin-bottom: 0px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .command__item {
     margin-right: 30px;
   }
@@ -586,7 +586,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .command__item:nth-child(2) {
+  .command__item:nth-last-child(4) {
     margin-right: 30px;
   }
 }
