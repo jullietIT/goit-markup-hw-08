@@ -80,30 +80,40 @@
 
  
 .project__card{
-  // position: relative;
-  margin-bottom: 30px; 
-      &:nth-child(9n){
+  background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    &:last-child {
         margin-bottom: 0px;
+    
       }
+    
+  // position: relative;
+    margin-bottom: 30px;
+  //     @media (max-width:767px){
+  //     &:nth-child(9n){
+  //       margin-bottom:0px;
+  //     }
+  // }
    @media (min-width:$tablet) {
         margin-right: 30px; 
         padding: 0;
         margin-bottom: 30px; 
+        width: 354px;
       
       }
       @media (max-width:1199px){
       &:nth-child(2n){
         margin-right: 0px;
-      }
+    
     }
+  }
   @media (min-width:$desktop) {
         width: 370px;       
         margin-bottom: 30px;
         margin-right: 30px;
         padding: 0;
-            &:nth-child(3),
-            &:nth-child(6),
-            &:nth-child(9) {
+            &:nth-child(3n)
+      {
                 margin-right: 0px;}
 
             &:nth-child(7),
@@ -118,10 +128,10 @@
 
 .project__link{
         display: block;
-        transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
        &:hover,
        &:focus{
-           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
          
            }
    }
@@ -180,6 +190,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+  margin-left: 24px;
+  margin-top: 20px;
 }
 
 .project__label {
@@ -187,20 +199,22 @@
   line-height: 1.9;
   color: $title-text-color;
   margin-top: 4px;
+  margin-left: 24px;
+  padding-bottom: 20px;
 }
 
 
 
-.project__card:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
+// .project__card:nth-last-child(-n+3) {
+//   margin-bottom: 0px;
+// }
 
 
-.project__card:nth-child(3),
-.project__card:nth-child(6),
-.project__card:nth-child(9) {
-  margin-right: 0px;
-}
+// .project__card:nth-child(3),
+// .project__card:nth-child(6),
+// .project__card:nth-child(9) {
+//   margin-right: 0px;
+// }
 
 
 .project__link:hover .project__overlay-text,

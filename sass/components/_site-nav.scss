@@ -1,11 +1,14 @@
 /* menu  */
 .header__container { 
 position: relative;
+margin: 16px;
     @media(min-width:$tablet) {
         display: flex;
         align-items: center;
         margin-bottom: -1px;
         position: relative;
+       
+     
     }
 
 }

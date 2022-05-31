@@ -2,6 +2,7 @@
  @media  (min-width:768px) {
         display: none;        
     }
+
 position: absolute;
 top: 0;
 right: 10px;
@@ -16,12 +17,7 @@ z-index: 2;
      &:focus{
      fill:$logo-color;      
     }       
-  
-    
-  
-  
- 
-    border: 0;
+      border: 0;
     cursor: pointer;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
