@@ -9,43 +9,43 @@
       flex-wrap: wrap;
    }
       
-  .command__item{
-      margin-right: 30px;
-       &:nth-child(4){
-         margin-bottom: 0px;
-        }
-       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-       background-color: $accent-color;
-      // width: 450px;
+.command__item{
+   margin-right: 30px;
+   margin-bottom: 30px;
+    
 
-      @media(min-width:$tablet) and (max-width:1199px) {
-      // width: 354px;  
-      margin-bottom: 30px;
-      margin-right: 30px;
-         
-          &:nth-child(2n){
+   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+   background-color: $accent-color;
+      // width: 450px;
+      @media (max-width: 767px) {
+            &:nth-child(4) {
+            margin-bottom: 0px;
+               }
+      }
+
+    @media(min-width:$tablet) and (max-width:1199px) {
+         // margin-bottom: 30px;
+         // margin-right: 30px;
+            &:nth-child(2n){
           margin-right: 0px;
+         }                
+            &:nth-child(3),
+             &:nth-child(4){
+          margin-bottom: 0px;
          }
-                
-         &:nth-child(3),
-         &:nth-child(4){
-           margin-bottom: 0px;
-         }
+          // width: 354px;  
       }
       @media (min-width:$desktop) {
-       
-         margin-right: 30px;
-         // max-width: 270px;
+      
+         max-width: 270px;
          //  max-height: 428px;
+         &:nth-last-child(4) {
+               margin-right: 30px;
+            }
       
       }
 
-      @media (min-width:$desktop){
-   //  width: 270px; 
-        &:nth-last-child(4){
-        margin-right: 30px;
-        }
-    }  
+    
 }
   .command__foto{
        @media screen  and (min-width:$desktop){
