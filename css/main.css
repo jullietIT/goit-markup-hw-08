@@ -956,7 +956,11 @@ img {
 .footer {
   background-color: #2F303A;
   padding: 60px 0;
-  text-align: center;
+}
+@media (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer__container {
@@ -1009,6 +1013,11 @@ img {
   padding-left: 0;
   margin-top: 20px;
 }
+@media (max-width: 767px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
 
 .address__text {
   font-family: Roboto;
@@ -1046,7 +1055,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
 }
 
 .footer-label {
@@ -1060,7 +1068,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 60px;
+}
+@media (max-width: 1199px) {
+  .footer-label {
+    margin-top: 60px;
+  }
 }
 
 .footer__title {
@@ -1130,13 +1142,9 @@ img {
   display: block;
   width: 100%;
   height: 50px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
   margin-bottom: 30px;
@@ -1148,7 +1156,10 @@ img {
 }
 @media (min-width: 1200px) {
   .form-footer__input {
+    display: inline-block;
     width: 358px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
