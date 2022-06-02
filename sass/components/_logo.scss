@@ -9,19 +9,22 @@
     text-align: left;
     text-decoration: none;
 
-  margin: 16px 0;
-
-
-    
+    // margin-top: 16px;
+  
     }
+
  .logo__black{
       color: $primary-text-color;
-      margin-top: 32px;
+      // margin-top: 32px;
+      margin-bottom: 25px;
+      
       @media (min-width:$tablet) { 
           margin-right: 88px;
       }
       @media (min-width:$desktop){
          margin-right: 93px;
+          margin-top: 32px;
+        
       }  
 }
 

@@ -1,12 +1,14 @@
 /* menu  */
 .header__container { 
 position: relative;
-margin: 16px;
+  margin: 22px auto;
+
     @media(min-width:$tablet) {
         display: flex;
         align-items: center;
         margin-bottom: -1px;
-        position: relative;
+       
+      
        
      
     }
@@ -15,15 +17,8 @@ margin: 16px;
 
 .menu{
   display:none;
-  // display: block;
-  // font-size:40px;
-  // font-weight: 500;
-  // line-height: 1.2;
-
-
        @media (min-width:$tablet) {
-    
-      
+         
         display: flex;       
         flex-direction: row;
         justify-content: center;
@@ -127,9 +122,13 @@ margin: 16px;
       }
       
         @media (max-width:$desktop) {
-     margin-left: 84px;
+          position: relative;
+            margin-left: auto;
+            margin-right: 0;
+          
+    //  margin-left: 84px;
      
-        flex-direction: column;
+        // flex-direction: column;
           }
        
 }
