@@ -146,7 +146,6 @@ img {
 /* menu  */
 .header__container {
   position: relative;
-  margin: 22px auto;
 }
 @media (min-width: 768px) {
   .header__container {
@@ -253,7 +252,6 @@ img {
     line-height: 1.1;
     text-decoration: none;
     margin-left: auto;
-    padding-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,6 +267,8 @@ img {
     position: relative;
     margin-left: auto;
     margin-right: 0;
+    width: auto;
+    margin-left: auto;
   }
 }
 
@@ -589,7 +589,7 @@ img {
 @media (min-width: 1200px) {
   .command__item {
     margin-right: 30px;
-    max-width: 270px;
+    width: 270px;
   }
   .command__item:nth-last-child(1) {
     margin-right: 0px;

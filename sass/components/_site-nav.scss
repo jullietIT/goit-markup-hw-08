@@ -1,7 +1,7 @@
 /* menu  */
 .header__container { 
 position: relative;
-  margin: 22px auto;
+  // margin: 22px auto;
 
     @media(min-width:$tablet) {
         display: flex;
@@ -110,13 +110,24 @@ position: relative;
 
       text-decoration: none;
       margin-left: auto;
-      padding-left: 0;
+      // padding-left: 0;
  
 
       display: flex;
       
       flex-wrap: wrap;
       align-items: baseline;
+
+
+
+
+          //   display: flex;
+          //   flex-direction: column;
+          //   flex-wrap: wrap;
+          //   align-items: baseline;
+          //   margin-left: auto;
+          // }
+  
       
     
       }
@@ -125,7 +136,8 @@ position: relative;
           position: relative;
             margin-left: auto;
             margin-right: 0;
-          
+              width: auto;
+                margin-left: auto;
     //  margin-left: 84px;
      
         // flex-direction: column;
