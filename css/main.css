@@ -251,7 +251,9 @@ img {
     font-weight: 500;
     line-height: 1.1;
     text-decoration: none;
+    margin-right: 0;
     margin-left: auto;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -262,13 +264,9 @@ img {
             align-items: baseline;
   }
 }
-@media (max-width: 1200px) {
-  .contact {
-    position: relative;
-    margin-left: auto;
-    margin-right: 0;
-    width: auto;
-    margin-left: auto;
+@media (min-width: 1200px) {
+  .contact .contact.contact__item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -332,10 +330,6 @@ img {
 }
 .contact__icon:hover, .contact__icon:focus {
   color: #2196f3;
-}
-
-.contact .contact__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .button-modal {

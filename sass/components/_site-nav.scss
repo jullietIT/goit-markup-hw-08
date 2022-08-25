@@ -107,42 +107,23 @@ position: relative;
       font-size:14px;
       font-weight: 500;
       line-height:1.1;
-
       text-decoration: none;
+      margin-right: 0;
       margin-left: auto;
-      // padding-left: 0;
- 
+      position: relative;
 
-      display: flex;
-      
+      display: flex;      
       flex-wrap: wrap;
       align-items: baseline;
-
-
-
-
-          //   display: flex;
-          //   flex-direction: column;
-          //   flex-wrap: wrap;
-          //   align-items: baseline;
-          //   margin-left: auto;
-          // }
+      //   flex-direction: column;
+       //  margin-left: 84px;
   
-      
-    
-      }
-      
-        @media (max-width:$desktop) {
-          position: relative;
-            margin-left: auto;
-            margin-right: 0;
-              width: auto;
-                margin-left: auto;
-    //  margin-left: 84px;
-     
-        // flex-direction: column;
           }
-       
+    @media (min-width:$desktop) {
+        .contact.contact__item:not(:last-child) {
+           margin-right: 50px;
+                 }
+     }
 }
   
 
@@ -208,9 +189,6 @@ position: relative;
         }
   }
 
-  .contact .contact__item:not(:last-child) {
-    margin-right: 50px;
-}
 
 
 
