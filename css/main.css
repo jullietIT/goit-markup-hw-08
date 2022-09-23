@@ -246,7 +246,6 @@ img {
   transition-property: color, 250ms, 0.4, 0, 0.2, 1;
 }
 
-/*контакты*/
 .contact__mail {
   display: inline-block;
   width: 16px;
