@@ -143,9 +143,12 @@ img {
   color: #ffffff;
 }
 
-/* menu  */
+/* header */
 .header__container {
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 768px) {
   .header__container {
@@ -159,6 +162,7 @@ img {
   }
 }
 
+/* site nav  */
 .menu {
   display: none;
 }
@@ -191,6 +195,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  margin-right: 50px;
 }
 @media (min-width: 768px) {
   .menu__item:not(:last-child) {
@@ -242,6 +247,32 @@ img {
 }
 
 /*контакты*/
+.contact__mail {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  padding: 32px 0;
+  margin-right: 10px;
+}
+
+.contact__phone {
+  width: 10px;
+  height: 16px;
+  padding: 30px 0;
+  margin-right: 10px;
+}
+
+.contact__icon {
+  margin-right: 10px;
+}
+.contact__icon:hover, .contact__icon:focus {
+  color: #2196f3;
+}
+
+.contact .contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact {
   display: none;
 }
@@ -266,7 +297,7 @@ img {
 }
 @media (min-width: 1200px) {
   .contact .contact.contact__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 0px;
   }
 }
 
@@ -279,21 +310,6 @@ img {
   padding-bottom: 10px;
 }
 
-.contact__mail {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  padding: 32px 0;
-  margin-right: 10px;
-}
-
-.contact__phone {
-  width: 10px;
-  height: 16px;
-  padding: 30px 0;
-  margin-right: 10px;
-}
-
 .contact__link {
   display: block;
   display: -webkit-box;
@@ -302,6 +318,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
   color: #757575;
   -webkit-transition-property: color;
   transition-property: color;
@@ -316,20 +333,8 @@ img {
 @media (min-width: 1200px) {
   .contact__link {
     padding: 32px 0;
+    margin-left: auto;
   }
-}
-
-@media (max-width: 1200px) {
-  .contact__link-tablet {
-    padding-top: 21px;
-  }
-}
-
-.contact__icon {
-  margin-right: 10px;
-}
-.contact__icon:hover, .contact__icon:focus {
-  color: #2196f3;
 }
 
 .button-modal {
@@ -882,7 +887,6 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* Overlay */
 /* Overlay */
 .project__overlay {
   position: relative;
